@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     siteName: "Quintessence Publishing",
     images: [
       {
-        url: "/images/share-image.png",
-        width: 1200,
-        height: 630,
+        url: "/images/logo.png",
+        width: 1429,
+        height: 431,
         alt: "Quintessence Publishing",
       },
     ],
