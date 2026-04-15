@@ -1,34 +1,19 @@
 import { Categories } from '@/types';
 
 export const categories: Categories = {
-  'quran': {
-    slug: 'quran',
-    name: 'Qur\'an',
+  'irfan-sufism': {
+    slug: 'irfan-sufism',
+    name: 'Irfan & Sufism',
     order: 1,
   },
-  'islam': {
-    slug: 'islam',
-    name: 'Islam',
-    order: 2
+  'quran-islam': {
+    slug: 'quran-islam',
+    name: 'Quran & Islam',
+    order: 2,
   },
-  'sufism': {
-    slug: 'sufism',
-    name: 'Sufism',
-    order: 3
-  },
-  'talks-courses': {
-    slug: 'talks-courses',
-    name: 'Talks and Courses',
-    order: 4
-  },
-  'inspirations': {
-    slug: 'inspirations',
-    name: 'Inspirations',
-    order: 5
-  },
-  'other': {
-    slug: 'other',
-    name: 'Other',
-    order: 6
+  'poetry': {
+    slug: 'poetry',
+    name: 'Poetry',
+    order: 3,
   },
 };

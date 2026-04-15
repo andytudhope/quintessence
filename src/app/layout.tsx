@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zahra Publications",
-  description: "All Shaykh Fadhlalla Haeri's books in one place",
+  title: "Quintessence Publishing",
+  description: "Quintessence Publishing — spiritual and transformative books on Irfan, Sufism, Islam, and Poetry",
   icons: {
-    icon: "/favicon.ico", // or .png, .svg etc.
+    icon: "/favicon.ico",
     shortcut: "/images/favicon-32x32.png",
     apple: "/images/apple-touch-icon.png",
     other: [
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Zahra Publications",
-    description: "All Shaykh Fadhlalla Haeri's books in one place",
-    url: "https://zahra-pub.vercel.app",
-    siteName: "Zahra Publications",
+    title: "Quintessence Publishing",
+    description: "Quintessence Publishing — spiritual and transformative books on Irfan, Sufism, Islam, and Poetry",
+    url: "https://qpublish.com",
+    siteName: "Quintessence Publishing",
     images: [
       {
         url: "/images/share-image.png",
         width: 1200,
         height: 630,
-        alt: "Zahra Publications",
+        alt: "Quintessence Publishing",
       },
     ],
     type: "website",

@@ -1,19 +1,13 @@
 import { Book } from '@/types';
 import { categories } from './categories';
-import { islamBooks } from './data/islam';
-import { quranBooks } from './data/quran';
-import { sufismBooks } from './data/sufism';
-import { talksCoursesBooks } from './data/talks-courses';
-import { inspirationalBooks } from './data/inspirations';
-import { otherBooks } from './data/other';
+import { irfanSufismBooks } from './data/irfan-sufism';
+import { quranIslamBooks } from './data/quran-islam';
+import { poetryBooks } from './data/poetry';
 
 export const books: Book[] = [
-  ...islamBooks,
-  ...quranBooks,
-  ...sufismBooks,
-  ...talksCoursesBooks,
-  ...inspirationalBooks,
-  ...otherBooks,
+  ...irfanSufismBooks,
+  ...quranIslamBooks,
+  ...poetryBooks,
 ];
 
 export { categories };

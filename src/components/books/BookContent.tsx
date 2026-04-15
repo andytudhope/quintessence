@@ -71,9 +71,9 @@ export default function BookContent({ book }: BookContentProps) {
 
         <div>
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
-          <p className="text-gray-400 italic mb-6">
-            {book.author || 'Shaykh Fadhlalla Haeri'}
-          </p>
+          {book.author && (
+            <p className="text-gray-400 italic mb-6">{book.author}</p>
+          )}
           <RichText content={book.description} />
 
           {book.coming && !hasAnyPurchaseLinks ? (

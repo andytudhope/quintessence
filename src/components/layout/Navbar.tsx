@@ -20,13 +20,13 @@ const Navbar = () => {
             {/* Desktop Logo */}
             <div className="flex md:hidden items-center">
               <Link href="/">
-                <Image src="/images/desktop-logo.png" alt="Zahra Publications" width={150} height={70} />
+                <Image src="/images/logo.jpg" alt="Quintessence Publishing" width={150} height={70} style={{ objectFit: 'contain' }} />
               </Link>
             </div>
             {/* Mobile Logo */}
             <div className="hidden md:flex items-center">
               <Link href="/">
-                <Image src="/images/desktop-logo.png" alt="Zahra Publications" width={120} height={50} />
+                <Image src="/images/logo.jpg" alt="Quintessence Publishing" width={120} height={50} style={{ objectFit: 'contain' }} />
               </Link>
             </div>
 

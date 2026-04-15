@@ -1,5 +1,5 @@
 {
-  "name": "zahra-publications",
+  "name": "quintessence-publishing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,8 +18,7 @@
     "next": "15.1.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-simple-maps": "^3.0.0",
-    "react-svg-worldmap": "^2.0.0-alpha.16"
+    "react-simple-maps": "^3.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

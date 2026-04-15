@@ -29,13 +29,9 @@ export interface Book {
 }
 
 export type CategorySlug =
-  | 'quran'
-  | 'islam'
-  | 'sufism'
-  | 'practices'
-  | 'talks-courses'
-  | 'inspirations'
-  | 'other';
+  | 'irfan-sufism'
+  | 'quran-islam'
+  | 'poetry';
 
 export interface Category {
   slug: CategorySlug;
