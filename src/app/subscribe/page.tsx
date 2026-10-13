@@ -5,7 +5,7 @@ import NewsletterSignup from "@/components/layout/NewsletterSignup";
 export const metadata: Metadata = {
   title: "Join our reader list — Quintessence Publishing",
   description:
-    "Subscribe to hear when Quintessence Publishing releases new titles in Irfan, Sufism, the Qur'an and poetry.",
+    "Subscribe to hear when Quintessence Publishing releases new titles in ʿIrfān, Sufism, the Qurʾān and poetry.",
 };
 
 export default function SubscribePage() {
