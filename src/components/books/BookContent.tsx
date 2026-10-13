@@ -72,12 +72,12 @@ export default function BookContent({ book }: BookContentProps) {
         <div>
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
           {book.author && (
-            <p className="text-gray-400 italic mb-6">{book.author}</p>
+            <p className="text-gray-500 dark:text-gray-300 italic mb-6">{book.author}</p>
           )}
           <RichText content={book.description} />
 
           {book.coming && !hasAnyPurchaseLinks ? (
-            <h2 className="text-2xl font-semibold mt-8 text-gray-600">
+            <h2 className="text-2xl font-semibold mt-8 text-gray-600 dark:text-gray-300">
               Purchase links available soon
             </h2>
           ) : (
@@ -86,7 +86,7 @@ export default function BookContent({ book }: BookContentProps) {
               {book.samplePdfUrl && (
                 <a
                   href={book.samplePdfUrl}
-                  className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
+                  className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center border-2 border-black dark:border-gray-200 text-black dark:text-gray-100 py-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -116,7 +116,7 @@ export default function BookContent({ book }: BookContentProps) {
                         {kindleUrl && (
                           <a
                             href={kindleUrl}
-                            className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                            className="block w-full text-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 py-3 rounded-lg hover:border-black dark:hover:border-gray-300 transition-colors"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -126,7 +126,7 @@ export default function BookContent({ book }: BookContentProps) {
                         {book.purchaseLinks.kobo && (
                           <a
                             href={book.purchaseLinks.kobo}
-                            className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                            className="block w-full text-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 py-3 rounded-lg hover:border-black dark:hover:border-gray-300 transition-colors"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -136,7 +136,7 @@ export default function BookContent({ book }: BookContentProps) {
                         {book.purchaseLinks.apple && (
                           <a
                             href={book.purchaseLinks.apple}
-                            className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                            className="block w-full text-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 py-3 rounded-lg hover:border-black dark:hover:border-gray-300 transition-colors"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -159,7 +159,7 @@ export default function BookContent({ book }: BookContentProps) {
                             <a
                               key={index}
                               href={link.url}
-                              className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                              className="block w-full text-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 py-3 rounded-lg hover:border-black dark:hover:border-gray-300 transition-colors"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -168,7 +168,7 @@ export default function BookContent({ book }: BookContentProps) {
                           ))}
                         </div>
                       ) : (
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
                           Sorry, there are no local bookshops stocking this book currently.
                           Please use the toggle to see international options for purchase.
                         </p>
@@ -192,7 +192,7 @@ export default function BookContent({ book }: BookContentProps) {
                               />
                             </button>
 
-                            <span className="text-gray-700 text-sm select-none">
+                            <span className="text-gray-700 dark:text-gray-200 text-sm select-none">
                               {showMoreShops
                                 ? 'Hide bookshops outside your geography'
                                 : 'Show all bookshops outside your geography'}
@@ -205,7 +205,7 @@ export default function BookContent({ book }: BookContentProps) {
                                 <a
                                   key={`extra-${index}`}
                                   href={link.url}
-                                  className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                                  className="block w-full text-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 py-3 rounded-lg hover:border-black dark:hover:border-gray-300 transition-colors"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
