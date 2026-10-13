@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Fragment } from 'react';
 import { categories, books } from '@/lib/books';
-import ComingSoonTile from '@/components/books/ComingSoonTile';
+import { forthcoming } from '@/lib/books/data/forthcoming';
+import ComingSoonCard from '@/components/books/ComingSoonCard';
 
 export default function Home() {
   return (
@@ -13,14 +14,14 @@ export default function Home() {
         <Image src={"/images/logo.jpg"} alt="Quintessence Publishing" className="mx-auto" width={600} height={300} loading='eager' />
       </div>
 
-      {/* Category Sections — 2-column grid on desktop */}
+      {/* Category Sections — published titles only, 2-column grid on desktop */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-1">
           {Object.values(categories)
             .sort((a, b) => a.order - b.order)
             .map((category) => {
               const categoryBooks = books
-                .filter(book => book.category === category.slug)
+                .filter((book) => book.category === category.slug && !book.coming)
                 .sort((a, b) => (a.order ?? 99) - (b.order ?? 99))
                 .slice(0, 4);
 
@@ -37,29 +38,22 @@ export default function Home() {
                     </Link>
 
                     <div className="grid grid-cols-2 gap-3">
-                      {categoryBooks.map((book) =>
-                        book.coming ? (
-                          <ComingSoonTile
-                            key={book.id}
-                            title={book.title}
+                      {categoryBooks.map((book) => (
+                        <Link
+                          key={book.id}
+                          href={`/book/${book.id}`}
+                          className="block aspect-[10/14] relative transition-transform hover:scale-105"
+                        >
+                          <Image
+                            src={book.coverImage}
+                            alt={book.title}
+                            fill
+                            sizes="(max-width: 768px) 50vw, 12vw"
+                            className="rounded-lg shadow-md object-cover"
+                            unoptimized
                           />
-                        ) : (
-                          <Link
-                            key={book.id}
-                            href={`/book/${book.id}`}
-                            className="block aspect-[10/14] relative transition-transform hover:scale-105"
-                          >
-                            <Image
-                              src={book.coverImage}
-                              alt={book.title}
-                              fill
-                              sizes="(max-width: 768px) 50vw, 12vw"
-                              className="rounded-lg shadow-md object-cover"
-                              unoptimized
-                            />
-                          </Link>
-                        )
-                      )}
+                        </Link>
+                      ))}
                     </div>
                   </section>
 
@@ -74,6 +68,24 @@ export default function Home() {
             })}
         </div>
       </div>
+
+      {/* Coming Soon — forthcoming titles, each clickable to its own page */}
+      {forthcoming.length > 0 && (
+        <div className="max-w-6xl mx-auto px-4 pb-16">
+          <h2 className="text-2xl font-bold mb-6 text-center">Coming Soon</h2>
+          <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
+            {forthcoming.map((item) => (
+              <Link
+                key={item.id}
+                href={`/forthcoming/${item.id}`}
+                className="block transition-transform hover:scale-105"
+              >
+                <ComingSoonCard item={item} />
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
     </div>
   );
