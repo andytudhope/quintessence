@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Fragment } from 'react';
 import { categories, books } from '@/lib/books';
 import ComingSoonTile from '@/components/books/ComingSoonTile';
 
@@ -26,40 +27,49 @@ export default function Home() {
               if (categoryBooks.length === 0) return null;
 
               return (
-                <section key={category.slug} className="flex flex-col">
-                  <Link
-                    href={`/${category.slug}`}
-                    className="inline-block hover:underline mb-5"
-                  >
-                    <h2 className="text-2xl font-bold">{category.name}</h2>
-                  </Link>
+                <Fragment key={category.slug}>
+                  <section className="flex flex-col">
+                    <Link
+                      href={`/${category.slug}`}
+                      className="inline-block hover:underline mb-5"
+                    >
+                      <h2 className="text-2xl font-bold">{category.name}</h2>
+                    </Link>
 
-                  <div className="grid grid-cols-2 gap-3">
-                    {categoryBooks.map((book) =>
-                      book.coming ? (
-                        <ComingSoonTile
-                          key={book.id}
-                          title={book.title}
-                        />
-                      ) : (
-                        <Link
-                          key={book.id}
-                          href={`/book/${book.id}`}
-                          className="block aspect-[10/14] relative transition-transform hover:scale-105"
-                        >
-                          <Image
-                            src={book.coverImage}
-                            alt={book.title}
-                            fill
-                            sizes="(max-width: 768px) 50vw, 12vw"
-                            className="rounded-lg shadow-md object-cover"
-                            unoptimized
+                    <div className="grid grid-cols-2 gap-3">
+                      {categoryBooks.map((book) =>
+                        book.coming ? (
+                          <ComingSoonTile
+                            key={book.id}
+                            title={book.title}
                           />
-                        </Link>
-                      )
-                    )}
-                  </div>
-                </section>
+                        ) : (
+                          <Link
+                            key={book.id}
+                            href={`/book/${book.id}`}
+                            className="block aspect-[10/14] relative transition-transform hover:scale-105"
+                          >
+                            <Image
+                              src={book.coverImage}
+                              alt={book.title}
+                              fill
+                              sizes="(max-width: 768px) 50vw, 12vw"
+                              className="rounded-lg shadow-md object-cover"
+                              unoptimized
+                            />
+                          </Link>
+                        )
+                      )}
+                    </div>
+                  </section>
+
+                  {/* Mission statement, shown after the first two categories */}
+                  {category.order === 2 && (
+                    <p className="col-span-2 md:col-span-1 text-center text-lg italic max-w-3xl mx-auto my-8 leading-relaxed">
+                      Quintessence Publishing renders the classical inner sciences of Islam — Irfan, Sufism, and the contemplative Qurʾān — into faithful, readable English, rooted in the tradition and the teaching of the Ahl al-Bayt.
+                    </p>
+                  )}
+                </Fragment>
               );
             })}
         </div>
