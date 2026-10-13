@@ -11,6 +11,11 @@ interface ComingSoonCardProps {
 /**
  * A title-page style placeholder "cover" for a forthcoming title.
  * Draws itself from the title's data — no cover art required.
+ *
+ * All type and spacing scale with the CARD's own width (container-query
+ * units, cqw) rather than the viewport, so the layout shrinks
+ * proportionally on narrow 2-column mobile cards and never overflows the
+ * frame — it reads the same at every size.
  */
 export default function ComingSoonCard({ item, className = '' }: ComingSoonCardProps) {
   return (
@@ -19,7 +24,8 @@ export default function ComingSoonCard({ item, className = '' }: ComingSoonCardP
       style={{
         background: 'linear-gradient(158deg,#15454f 0%,#0e323a 52%,#0a262c 100%)',
         color: CREAM,
-        padding: '12% 9% 9%',
+        padding: '11% 9% 8.5%',
+        containerType: 'inline-size',
       }}
     >
       {/* double-rule frame */}
@@ -36,22 +42,25 @@ export default function ComingSoonCard({ item, className = '' }: ComingSoonCardP
       {/* eyebrow */}
       <p
         className="relative z-10 font-sans font-semibold uppercase"
-        style={{ color: GOLD, fontSize: 'clamp(8px,1.4vw,10px)', letterSpacing: '0.22em' }}
+        style={{ color: GOLD, fontSize: 'clamp(6px,3.5cqw,10px)', letterSpacing: '0.22em' }}
       >
         Forthcoming
       </p>
 
       {/* middle */}
       <div className="relative z-10 flex flex-col items-center">
-        <span aria-hidden="true" style={{ color: GOLD, fontSize: '12px', marginBottom: '10px' }}>
+        <span
+          aria-hidden="true"
+          style={{ color: GOLD, fontSize: 'clamp(8px,4.2cqw,12px)', marginBottom: '3cqw' }}
+        >
           ✦
         </span>
         <h3
           className="font-serif font-semibold"
           style={{
             color: '#f6f1e7',
-            fontSize: 'clamp(15px,2.2vw,19px)',
-            lineHeight: 1.22,
+            fontSize: 'clamp(11px,6.6cqw,18px)',
+            lineHeight: 1.18,
             letterSpacing: '0.2px',
           }}
         >
@@ -62,20 +71,20 @@ export default function ComingSoonCard({ item, className = '' }: ComingSoonCardP
             className="font-serif italic"
             style={{
               color: `${CREAM}b8`,
-              fontSize: 'clamp(9px,1.4vw,11px)',
-              lineHeight: 1.35,
-              marginTop: '8px',
+              fontSize: 'clamp(8px,3.8cqw,11px)',
+              lineHeight: 1.28,
+              marginTop: '2.6cqw',
             }}
           >
             {item.subtitle}
           </p>
         )}
-        <div style={{ width: '34px', height: '1px', background: `${GOLD}8c`, margin: '12px auto 11px' }} />
+        <div style={{ width: '12cqw', height: '1px', background: `${GOLD}8c`, margin: '3.6cqw auto 3.4cqw' }} />
         <div
           className="font-sans"
           style={{
-            fontSize: 'clamp(8px,1.3vw,10px)',
-            lineHeight: 1.7,
+            fontSize: 'clamp(7px,3.5cqw,10px)',
+            lineHeight: 1.5,
             color: `${CREAM}ad`,
             letterSpacing: '0.3px',
           }}
@@ -90,15 +99,15 @@ export default function ComingSoonCard({ item, className = '' }: ComingSoonCardP
       </div>
 
       {/* bottom */}
-      <div className="relative z-10 flex flex-col items-center" style={{ gap: '9px' }}>
+      <div className="relative z-10 flex flex-col items-center" style={{ gap: '3cqw' }}>
         <span
           className="font-sans font-semibold uppercase inline-block"
           style={{
             color: GOLD,
             border: `1px solid ${GOLD}80`,
             borderRadius: '999px',
-            padding: '4px 12px',
-            fontSize: 'clamp(8px,1.2vw,9px)',
+            padding: '1.4cqw 4.2cqw',
+            fontSize: 'clamp(6px,3.2cqw,9px)',
             letterSpacing: '0.18em',
           }}
         >
@@ -106,7 +115,7 @@ export default function ComingSoonCard({ item, className = '' }: ComingSoonCardP
         </span>
         <span
           className="font-sans uppercase"
-          style={{ color: `${CREAM}73`, fontSize: 'clamp(7px,1vw,8px)', letterSpacing: '0.25em' }}
+          style={{ color: `${CREAM}73`, fontSize: 'clamp(6px,2.8cqw,8px)', letterSpacing: '0.25em' }}
         >
           Quintessence
         </span>
