@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About — Quintessence Publishing",
   description:
-    "Quintessence Publishing brings the inner sciences of Islam — Irfan, Sufism, and the contemplative Qurʾān — into publication.",
+    "Quintessence Publishing brings the inner sciences of Islam — ʿirfān, Sufism, and the contemplative Qurʾān — into publication.",
 };
 
 export default function AboutPage() {
@@ -38,7 +38,7 @@ export default function AboutPage() {
           it.
         </p>
         <p>
-          <strong>Irfan &amp; Sufism</strong>{" "}— the gnostic heart of the
+          <strong>ʿIrfān &amp; Sufism</strong>{" "}— the gnostic heart of the
           tradition, in the lineage of Ibn ʿArabī, al-Qūnawī, and Mullā Ṣadrā.
         </p>
         <p>
