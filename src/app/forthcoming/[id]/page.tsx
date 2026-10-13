@@ -48,8 +48,14 @@ export default async function Page({ params }: PageParams) {
             </div>
           )}
 
+          {item.epigraph && (
+            <p className="font-serif italic text-lg lg:text-xl text-gray-600 dark:text-gray-300 border-l-2 border-[#b0873a] pl-4 mb-6 text-left">
+              {item.epigraph}
+            </p>
+          )}
+
           {item.description && (
-            <div className="text-gray-700 leading-relaxed space-y-4 mb-8">
+            <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4 mb-8 text-left">
               {item.description.split('\n\n').map((para, i) => (
                 <p key={i}>{para}</p>
               ))}
