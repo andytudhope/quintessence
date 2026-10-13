@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function SubscribePage() {
   return (
     <div
-      style={{ backgroundColor: "#f4efe6", minHeight: "70vh" }}
-      className="flex flex-col items-center justify-center px-4 py-16"
+      style={{ minHeight: "70vh" }}
+      className="flex flex-col items-center justify-center px-4 py-16 bg-white"
     >
       {/* Make the EmailOctopus form blend into the page instead of sitting in a white card. */}
       <style>{`
