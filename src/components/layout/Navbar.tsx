@@ -60,6 +60,12 @@ const Navbar = () => {
                           {category.name}
                         </Link>
                       ))}
+                      <Link
+                        href="/about"
+                        className="block px-4 py-2 text-sm font-bold text-black hover:underline"
+                      >
+                        About
+                      </Link>
                     </div>
                   </div>
                 )}
