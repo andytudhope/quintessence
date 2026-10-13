@@ -39,7 +39,7 @@ export const forthcoming: ForthcomingTitle[] = [
     category: 'quran-islam',
     epigraph: `Twelve lives, one line of guidance: from ʿAlī, born inside the Kaʿba, to the awaited Mahdī.`,
     description:
-      `Biography of the Twelve Imams is drawn from the Kitāb al-Irshād of al-Shaykh al-Mufīd (d. 413 AH / 1022 CE), among the earliest and most trusted lives of the Imams. Abridged by Shaykh Faḍlullāh al-Ḥāʾirī and set in clear modern English, it sets aside the chains of transmission but keeps the eyewitnesses, so the reader stands where they stood.` +
+      `Biography of the Twelve Imams is drawn from the Kitāb al-Irshād of al-Shaykh al-Mufīd (d. 413 AH / 1022 CE), among the earliest and most trusted lives of the Imams. Abridged by Shaykh Fadhlalla Haeri and set in clear modern English, it sets aside the chains of transmission but keeps the eyewitnesses, so the reader stands where they stood.` +
       `\n\n` +
       `The geese cry out at dawn as ʿAlī steps into his courtyard on the morning he is struck: “Leave them — they are wailing mourners.” On the road to Iraq the poet al-Farazdaq tells al-Ḥusayn that “the hearts of the people are with you, but their swords are against you.” A boy of nine, al-Jawād, leaves the judge Yaḥyā ibn Aktham stammering before the caliph. Al-Riḍā walks barefoot through Marw to the ʿĪd prayer, and the city is shaken with weeping.` +
       `\n\n` +
@@ -58,7 +58,13 @@ export const forthcoming: ForthcomingTitle[] = [
     subtitle: 'Prophet Muhammad: From the Shia Traditions of the Ahl al-Bayt',
     category: 'quran-islam',
     description:
-      'A contemporary adaptation of the second volume of the Hayāt al-Qulūb of Muhammad Bāqir al-Majlisī, from the English translations of James L. Merrick (1850) and Syed Athar Husain S. H. Rizvi.',
+      `At Uhud, wounded in the face, the Prophet caught his own blood and flung it upward, and not one drop came back to earth, lest punishment fall upon the world. Urged to curse his enemies, he prayed instead, “O God, guide my people, for they do not know.” This is The Life of Hearts: the life of the Prophet Muhammad as the traditions of his household, the Ahl al-Bayt, remember it.` +
+      `\n\n` +
+      `Its author, Muhammad Bāqir al-Majlisī (1627–1699), was Shaykh al-Islam of Safavid Isfahān. This adaptation of the second volume of his Hayāt al-Qulūb draws on James L. Merrick’s translation of 1850 and Syed Athar Husain S. H. Rizvi’s complete translation, from which much that Merrick omitted is restored.` +
+      `\n\n` +
+      `It runs from the light of Muhammad before creation to Ghadīr Khumm and his last morning. Through wonder and hardship walks a man who knew love, grief, exile, betrayal, sacrifice and forgiveness, yet was so wholly turned towards God, so attuned to the Highest Will, that the world itself answered him.` +
+      `\n\n` +
+      `Al-Majlisī called it The Life of Hearts, not the life of minds. May it open your heart to the Life of all Hearts, who changed our world forever.`,
     credits: [{ role: 'Adapted & edited by', name: 'Leyya Kalla' }],
   },
   {
