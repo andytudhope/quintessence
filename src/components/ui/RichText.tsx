@@ -8,7 +8,7 @@ interface RichTextProps {
 const RichText = ({ content, className = '' }: RichTextProps) => {
   return (
     <div 
-      className={`prose ${className}`}
+      className={`prose dark:prose-invert ${className}`}
       dangerouslySetInnerHTML={{ __html: formatDescription(content) }}
     />
   );
