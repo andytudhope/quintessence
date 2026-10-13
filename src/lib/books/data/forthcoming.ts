@@ -22,7 +22,7 @@ export const forthcoming: ForthcomingTitle[] = [
     category: 'quran-islam',
     epigraph: `“I am less than what you say, and more than what you think.”`,
     description:
-      `More has been written about Imam ʿAlī than about any figure of Islam save the Prophet himself. This book sets out to know the man. Here is the boy who carried food to the Prophet in the Cave of Ḥirāʾ; the warrior who, when his fallen enemy spat in his face at the Trench, paused until his anger on his own behalf had cooled; the caliph who walked the market of Kūfa in plain cloth, urging full measure; and the husband who said of Fāṭima, “Whenever I looked at her, my cares and sorrows fell away.”` +
+      `More has been written about Imam ʿAlī than about any figure of Islam save the Prophet himself. This book sets out to know the man. Here is the boy who carried food to the Prophet in the Cave of Ḥirāʾ; the warrior who, when his fallen enemy spat in his face at the Trench, paused until his anger on his own behalf had cooled; the caliph who walked the market of Kūfa in plain cloth, urging full measure; and the husband who said of Fāṛima, “Whenever I looked at her, my cares and sorrows fell away.”` +
       `\n\n` +
       `Part One tells his life, from his birth inside the Kaʿba to the dawn prayer in Kūfa at which he was struck down. Part Two gathers his own words: the Covenant to Mālik al-Ashtar, which reminds a governor that every subject is “either a brother to you in religion, or your like in creation”; the testament to his son al-Ḥasan; sermons, sayings and judgements; and poems attributed to him.` +
       `\n\n` +
@@ -73,6 +73,16 @@ export const forthcoming: ForthcomingTitle[] = [
     subtitle: 'On the Secrets of the Commander of the Faithful',
     author: 'Al-Ḥāfeẓ Rajab al-Bursī',
     category: 'irfan-sufism',
+    description:
+      `Some books describe the world; a few try to read it. The Dawning Lights of Certitude is one of the few — a visionary masterwork of Shīʿī gnosis that reads creation out of the letters of the Arabic alphabet, and sets ʿAlī ibn Abī Ṭālib (peace be upon him) at its axis.` +
+      `\n\n` +
+      `Written in early-fifteenth-century Ḥilla by al-Ḥāfiẓ Rajab al-Barsī — jurist, traditionist, and master of the science of letters — it has drawn and scandalized readers for six hundred years. Composed as a defense, at the risk of its author’s name, it now reaches English readers complete, with an introduction, a glossary, and a guide to its fourteen parts.` +
+      `\n\n` +
+      `Here the alif is the first created light and the point beneath the bāʾ the secret of origination; the Greatest Name lies hidden in the opening sūra; and the Commander of the Faithful speaks in sermons of cosmic grandeur. Through it all runs one claim — that the letters, the Names, the cosmos, and the Imams are a single unveiling of the One.` +
+      `\n\n` +
+      `Maximalist yet self-aware, it guards its own edge, recording the Imams’ own disavowal of those who would make them lords. It asks not for assent but for attention — look where it points, and see what dawns.` +
+      `\n\n` +
+      `A luminous, long-contested classic of Islamic gnosis, gathered and framed for the English reader at last.`,
     credits: [
       { role: 'Translated by', name: 'Hadeer Allam' },
       { role: 'Edited by', name: 'Leyya Kalla' },
