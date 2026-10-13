@@ -52,8 +52,23 @@ export default function AboutPage() {
 
         <h2>Who is behind Quintessence</h2>
         <p>
-          Quintessence Publishing was founded by Leyya Kalla — entrepreneur and
-          Chief Editor, twelve years a scribe to Shaykh Fadhlalla Haeri.
+          Quintessence Publishing was founded by{" "}
+          <a
+            href="https://www.linkedin.com/in/leyya/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Leyya Kalla
+          </a>
+          {" "}— entrepreneur and Chief Editor, twelve years a scribe to{" "}
+          <a
+            href="https://shaykhfadhlallahaeri.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Shaykh Fadhlalla Haeri
+          </a>
+          .
         </p>
 
         <p>
