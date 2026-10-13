@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Quintessence Publishing",
-  description: "Quintessence Publishing — spiritual and transformative books on Irfan, Sufism, Islam, and Poetry",
+  description: "Quintessence Publishing — spiritual and transformative books on ʿIrfān, Sufism, Islam, and Poetry",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/images/favicon-32x32.png",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Quintessence Publishing",
-    description: "Quintessence Publishing — spiritual and transformative books on Irfan, Sufism, Islam, and Poetry",
+    description: "Quintessence Publishing — spiritual and transformative books on ʿIrfān, Sufism, Islam, and Poetry",
     url: "https://qpublish.com",
     siteName: "Quintessence Publishing",
     images: [
