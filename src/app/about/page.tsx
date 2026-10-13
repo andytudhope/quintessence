@@ -14,8 +14,9 @@ export default function AboutPage() {
         <h1>About Quintessence Publishing</h1>
 
         <p>
-          Quintessence Publishing brings the inner sciences of Islam — ʿirfān,
-          taṣawwuf, and the contemplative Qurʾān — into publication.
+          Quintessence Publishing renders and publishes the classical inner
+          sciences of Islam — Irfan, Sufism, and the contemplative Qurʾān,
+          rooted in the tradition and the teaching of the Ahl al-Bayt.
         </p>
 
         <h2>The name</h2>
