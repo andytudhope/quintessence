@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About — Quintessence Publishing",
   description:
-    "Quintessence Publishing renders the classical inner sciences of Islam — Irfan, Sufism, and the contemplative Qurʾān — into faithful, readable English.",
+    "Quintessence Publishing brings the inner sciences of Islam — Irfan, Sufism, and the contemplative Qurʾān — into publication.",
 };
 
 export default function AboutPage() {
@@ -15,9 +15,7 @@ export default function AboutPage() {
 
         <p>
           Quintessence Publishing brings the inner sciences of Islam — ʿirfān,
-          taṣawwuf, and the contemplative Qurʾān — into clear, faithful English.
-          We are a small press by intention: we would rather publish one book
-          truly than many quickly.
+          taṣawwuf, and the contemplative Qurʾān — into publication.
         </p>
 
         <h2>The name</h2>
@@ -34,13 +32,13 @@ export default function AboutPage() {
 
         <h2>What we publish</h2>
         <p>
-          <strong>Irfan &amp; Sufism</strong>{" "}— the gnostic heart of the
-          tradition, in the lineage of Ibn ʿArabī, al-Qūnawī, and Mullā Ṣadrā.
-        </p>
-        <p>
           <strong>Qurʾān &amp; Islam</strong>{" "}— translations and studies that
           read the Book and the teaching of the Ahl al-Bayt for the light within
           it.
+        </p>
+        <p>
+          <strong>Irfan &amp; Sufism</strong>{" "}— the gnostic heart of the
+          tradition, in the lineage of Ibn ʿArabī, al-Qūnawī, and Mullā Ṣadrā.
         </p>
         <p>
           <strong>Poetry</strong>{" "}— where doctrine becomes music.
@@ -48,17 +46,14 @@ export default function AboutPage() {
 
         <h2>How we work</h2>
         <p>
-          We work from sound sources and translate closely without stiffness, so
-          that a text&rsquo;s meaning — not merely its words — comes through. Our
-          orientation is the Akbarī–Ṣadrian gnosis of Shia Islam, with the Ahl
-          al-Bayt as our locus.
+          Our orientation is the gnosis of Islam, with the Ahl al-Bayt as our
+          locus.
         </p>
 
         <h2>Who is behind Quintessence</h2>
         <p>
-          Quintessence Publishing was founded by Leyya Kalla — scholar and
-          editor, for twelve years scribe to Shaykh Fadhlalla Haeri, and
-          previously founder of Zahra Publications.
+          Quintessence Publishing was founded by Leyya Kalla — entrepreneur and
+          Chief Editor, twelve years a scribe to Shaykh Fadhlalla Haeri.
         </p>
 
         <p>
