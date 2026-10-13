@@ -61,7 +61,7 @@ export default function AboutPage() {
           >
             Leyya Kalla
           </a>
-          {" "}— entrepreneur and Chief Editor, twelve years a scribe to{" "}
+          {" "}— entrepreneur, chief editor, and scribe for over a decade, to{" "}
           <a
             href="https://shaykhfadhlallahaeri.com/"
             target="_blank"
