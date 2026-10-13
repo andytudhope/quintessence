@@ -80,7 +80,7 @@ export const irfanSufismBooks: Book[] = [
   {
     id: 'lights-of-certitude',
     title: 'Lights of Certitude',
-    author: 'Imam Ali Ibn Abi Talib',
+    author: 'Imam ʿAlī ibn Abī Ṭālib',
     description: 'Coming soon.',
     coverImage: '/images/book-covers/LightsOfCertitude.jpg',
     category: 'irfan-sufism',
