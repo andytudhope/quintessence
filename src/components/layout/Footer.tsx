@@ -7,13 +7,13 @@ const Footer = () => {
           <div className="text-center mb-8">
             <Link
               href="/subscribe"
-              className="inline-block border border-gray-400 rounded px-6 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+              className="inline-block border border-gray-400 dark:border-gray-500 rounded px-6 py-2 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               Join our reader list
             </Link>
           </div>
-          <div className="text-center text-gray-600 text-sm border-t pt-6">
-            <p className="font-semibold text-gray-800 mb-1">Quintessence Publishing</p>
+          <div className="text-center text-gray-600 dark:text-gray-400 text-sm border-t pt-6">
+            <p className="font-semibold text-gray-800 dark:text-gray-100 mb-1">Quintessence Publishing</p>
             <p>© {new Date().getFullYear()} Quintessence Publishing. All rights reserved.</p>
           </div>
         </div>
