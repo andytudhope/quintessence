@@ -23,16 +23,7 @@ const NewsletterSignup = () => {
     containerRef.current.appendChild(script);
   }, []);
 
-  return (
-    <div className="max-w-md mx-auto text-center mb-8">
-      <p className="font-semibold text-gray-800 mb-1">Join our reader list</p>
-      <p className="text-gray-600 text-sm mb-4">
-        New titles arrive a few times a year. We write seldom, and only when
-        there is something worth sending.
-      </p>
-      <div ref={containerRef} />
-    </div>
-  );
+  return <div ref={containerRef} />;
 };
 
 export default NewsletterSignup;
