@@ -22,28 +22,28 @@ export default function AboutPage() {
 
         <h2>The name</h2>
         <p>
-          <em>Quintessence</em> is the &ldquo;fifth essence&rdquo; — the pure,
+          <em>Quintessence</em>{" "}is the &ldquo;fifth essence&rdquo; — the pure,
           subtle reality drawn out from the many, beyond the four elements. It is
           a Latin word for an idea native to this tradition: the alchemy behind
-          it grew from Islamic <em>kīmiyāʾ</em>, and the Qurʾān keeps its own
+          it grew from Islamic{" "}<em>kīmiyāʾ</em>, and the Qurʾān keeps its own
           word for the kernel within the husk — <em>lubb</em>, whose possessors,
-          the <em>ūlū al-albāb</em>, reach the essence of things. We take the name
-          as our task: to draw out the essence of a text and render it without
-          distortion.
+          the{" "}<em>ūlū al-albāb</em>, reach the essence of things. We take the
+          name as our task: to draw out the essence of a text and render it
+          without distortion.
         </p>
 
         <h2>What we publish</h2>
         <p>
-          <strong>Irfan &amp; Sufism</strong> — the gnostic heart of the
+          <strong>Irfan &amp; Sufism</strong>{" "}— the gnostic heart of the
           tradition, in the lineage of Ibn ʿArabī, al-Qūnawī, and Mullā Ṣadrā.
         </p>
         <p>
-          <strong>Qurʾān &amp; Islam</strong> — translations and studies that
+          <strong>Qurʾān &amp; Islam</strong>{" "}— translations and studies that
           read the Book and the teaching of the Ahl al-Bayt for the light within
           it.
         </p>
         <p>
-          <strong>Poetry</strong> — where doctrine becomes music.
+          <strong>Poetry</strong>{" "}— where doctrine becomes music.
         </p>
 
         <h2>How we work</h2>
@@ -63,7 +63,7 @@ export default function AboutPage() {
 
         <p>
           New titles arrive a few times a year.{" "}
-          <Link href="/subscribe">Join our reader list</Link> to hear when they
+          <Link href="/subscribe">Join our reader list</Link>{" "}to hear when they
           do.
         </p>
       </article>
