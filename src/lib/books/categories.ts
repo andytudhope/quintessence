@@ -1,14 +1,14 @@
 import { Categories } from '@/types';
 
 export const categories: Categories = {
+  'quran-islam': {
+    slug: 'quran-islam',
+    name: 'Qurʾān & Islam',
+    order: 1,
+  },
   'irfan-sufism': {
     slug: 'irfan-sufism',
     name: 'Irfan & Sufism',
-    order: 1,
-  },
-  'quran-islam': {
-    slug: 'quran-islam',
-    name: 'Quran & Islam',
     order: 2,
   },
   'poetry': {
