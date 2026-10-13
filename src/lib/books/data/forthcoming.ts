@@ -7,6 +7,8 @@ export interface ForthcomingTitle {
   /** Primary author / source, shown first in the credits block. */
   author?: string;
   credits?: { role: string; name: string }[];
+  /** A short opening quote or line, set apart above the blurb. */
+  epigraph?: string;
   /** Longer blurb for the title's own page. Paragraphs separated by blank lines. */
   description?: string;
   /** Genre the title will belong to once published. */
@@ -18,6 +20,13 @@ export const forthcoming: ForthcomingTitle[] = [
     id: 'biography-imam-ali',
     title: 'A Biography of Imam ʿAlī',
     category: 'quran-islam',
+    epigraph: `“I am less than what you say, and more than what you think.”`,
+    description:
+      `More has been written about Imam ʿAlī than about any figure of Islam save the Prophet himself. This book sets out to know the man. Here is the boy who carried food to the Prophet in the Cave of Ḥirāʾ; the warrior who, when his fallen enemy spat in his face at the Trench, paused until his anger on his own behalf had cooled; the caliph who walked the market of Kūfa in plain cloth, urging full measure; and the husband who said of Fāṭima, “Whenever I looked at her, my cares and sorrows fell away.”` +
+      `\n\n` +
+      `Part One tells his life, from his birth inside the Kaʿba to the dawn prayer in Kūfa at which he was struck down. Part Two gathers his own words: the Covenant to Mālik al-Ashtar, which reminds a governor that every subject is “either a brother to you in religion, or your like in creation”; the testament to his son al-Ḥasan; sermons, sayings and judgements; and poems attributed to him.` +
+      `\n\n` +
+      `Selected by Shaykh Fadhlalla Haeri, translated by Mohammed Alsalman and edited in modern English, it is the companion to Biography of the Twelve Imams.`,
     credits: [
       { role: 'Selected by', name: 'Shaykh Fadhlalla Haeri' },
       { role: 'Translated by', name: 'Mohammed Alsalman' },
@@ -28,6 +37,15 @@ export const forthcoming: ForthcomingTitle[] = [
     id: 'biography-twelve-imams',
     title: 'Biography of the Twelve Imams of the Ahl al-Bayt',
     category: 'quran-islam',
+    epigraph: `Twelve lives, one line of guidance: from ʿAlī, born inside the Kaʿba, to the awaited Mahdī.`,
+    description:
+      `Biography of the Twelve Imams is drawn from the Kitāb al-Irshād of al-Shaykh al-Mufīd (d. 413 AH / 1022 CE), among the earliest and most trusted lives of the Imams. Abridged by Shaykh Faḍlullāh al-Ḥāʾirī and set in clear modern English, it sets aside the chains of transmission but keeps the eyewitnesses, so the reader stands where they stood.` +
+      `\n\n` +
+      `The geese cry out at dawn as ʿAlī steps into his courtyard on the morning he is struck: “Leave them — they are wailing mourners.” On the road to Iraq the poet al-Farazdaq tells al-Ḥusayn that “the hearts of the people are with you, but their swords are against you.” A boy of nine, al-Jawād, leaves the judge Yaḥyā ibn Aktham stammering before the caliph. Al-Riḍā walks barefoot through Marw to the ʿĪd prayer, and the city is shaken with weeping.` +
+      `\n\n` +
+      `Between the narratives, the Imams speak for themselves in sermons, prayers and counsels.` +
+      `\n\n` +
+      `A short and inviting way into the lives of the Imams, and the companion to Biography of Imam ʿAlī.`,
     credits: [
       { role: 'Selected by', name: 'Shaykh Fadhlalla Haeri' },
       { role: 'Translated by', name: 'Hadeer Allam' },
