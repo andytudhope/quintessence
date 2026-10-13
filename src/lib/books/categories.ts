@@ -8,7 +8,7 @@ export const categories: Categories = {
   },
   'irfan-sufism': {
     slug: 'irfan-sufism',
-    name: 'Irfan & Sufism',
+    name: 'ʿIrfān & Sufism',
     order: 2,
   },
   'poetry': {
