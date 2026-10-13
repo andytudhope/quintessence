@@ -66,7 +66,7 @@ export default function Home() {
                   {/* Mission statement, shown after the first two categories */}
                   {category.order === 2 && (
                     <p className="col-span-2 md:col-span-1 text-center text-lg italic max-w-3xl mx-auto my-8 leading-relaxed">
-                      Quintessence Publishing renders the classical inner sciences of Islam — Irfan, Sufism, and the contemplative Qurʾān — into faithful, readable English, rooted in the tradition and the teaching of the Ahl al-Bayt.
+                      Quintessence Publishing renders and publishes the classical inner sciences of Islam — Irfan, Sufism, and the contemplative Qurʾān, rooted in the tradition and the teaching of the Ahl al-Bayt.
                     </p>
                   )}
                 </Fragment>
