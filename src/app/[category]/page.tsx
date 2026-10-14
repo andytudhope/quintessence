@@ -31,7 +31,7 @@ export default async function Page({ params }: PageParams) {
           <Link
             key={book.id}
             href={`/book/${book.id}`}
-            className="block aspect-[10/14] relative transition-transform hover:scale-105"
+            className="block aspect-[2/3] relative transition-transform hover:scale-105"
           >
             <Image
               src={book.coverImage}
