@@ -11,7 +11,7 @@ export default function Home() {
 
       {/* Hero */}
       <div className="bg-white py-20 px-4 text-center">
-        <Image src={"/images/logo.jpg"} alt="Quintessence Publishing" className="mx-auto" width={600} height={300} loading='eager' />
+        <Image src={"/images/logo.jpg"} alt="Quintessence Publishing" className="mx-auto" width={480} height={240} loading='eager' />
       </div>
 
       {/* Category Sections — published titles only, 2-column grid on desktop */}
