@@ -18,6 +18,11 @@ export default function ContactPage() {
         </p>
 
         <p>
+          Email us if you would like to suggest any titles you would like to
+          see in future, or enquire more about our publications.
+        </p>
+
+        <p>
           Write to us at{" "}
           <a href="mailto:info@qpublish.com">info@qpublish.com</a>{" "}and we&rsquo;ll
           get back to you.
