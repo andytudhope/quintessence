@@ -66,6 +66,12 @@ const Navbar = () => {
                       >
                         About
                       </Link>
+                      <Link
+                        href="/contact"
+                        className="block px-4 py-2 text-sm font-bold text-black hover:underline"
+                      >
+                        Contact
+                      </Link>
                     </div>
                   </div>
                 )}

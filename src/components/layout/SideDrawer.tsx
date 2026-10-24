@@ -61,6 +61,13 @@ const SideDrawer = ({ isOpen, onClose }: SideDrawerProps) => {
             >
               About
             </Link>
+            <Link
+              href="/contact"
+              onClick={onClose}
+              className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md"
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </div>

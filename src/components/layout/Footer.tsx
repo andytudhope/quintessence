@@ -11,6 +11,15 @@ const Footer = () => {
             >
               Join our reader list
             </Link>
+            <p className="mt-4 text-sm text-gray-600">
+              Questions?{" "}
+              <a
+                href="mailto:info@qpublish.com"
+                className="underline hover:text-[#006838] transition-colors"
+              >
+                info@qpublish.com
+              </a>
+            </p>
           </div>
           <div className="text-center text-gray-600 dark:text-gray-400 text-sm border-t pt-6">
             <p className="font-semibold text-gray-800 dark:text-gray-100 mb-1">Quintessence Publishing</p>
